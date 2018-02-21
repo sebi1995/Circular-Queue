@@ -47,7 +47,7 @@ public class Main {
 
     private static String enq(Queue queue, Scanner scanner) {
         try {
-            Integer in = scanner.nextInt();
+            String in = scanner.nextLine();
             int res = queue.enqueue(in);
             if (res == -40) {
                 return RED + "YOU MUST DEQUEUE FIRST!" + RESET;
